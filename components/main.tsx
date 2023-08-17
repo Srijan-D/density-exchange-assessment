@@ -13,7 +13,7 @@ export function Main() {
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0.25 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1, type: "keyframes" }}
         className="flex flex-col space-y-9"
       >
         <p className="text-2xl font-medium">Ahead App</p>
