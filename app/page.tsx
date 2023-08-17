@@ -1,3 +1,9 @@
+import { Main } from "@/components/main"
+
 export default function Home() {
-  return <main className="">this is a test</main>
+  return (
+    <main className="px-12">
+      <Main />
+    </main>
+  )
 }
