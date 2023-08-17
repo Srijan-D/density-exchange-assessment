@@ -3,7 +3,7 @@ import mobile from "public/mobile.png"
 import { AiFillStar } from "react-icons/ai"
 
 import { DownloadButton } from "./download-button"
-import MotionDiv from "./motion-div-wrapper"
+import { MotionDiv } from "./motion-div-wrapper"
 
 export function Main() {
   return (

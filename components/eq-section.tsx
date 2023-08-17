@@ -1,6 +1,8 @@
 import Image from "next/image"
 import angryGhost from "public/ghost-cute.gif"
 
+import { MotionDiv } from "./motion-div-wrapper"
+import { MotionHeading } from "./motion-wrapper"
 import { Slider } from "./slider"
 
 export function EQ() {
@@ -22,20 +24,27 @@ export function EQ() {
       </div>
       <div>
         <div className="flex">
-          <h1
-            data-aos="zoom-in-right"
-            data-aos-duration="1500"
+          <MotionHeading
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}
             className="p-6 text-4xl font-bold"
           >
             Does this sound familiar...
-          </h1>
-          <Image
-            data-aos="fade-left"
-            data-aos-duration="1500"
+          </MotionHeading>
+          <MotionDiv
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5 }}
             className="w-20"
-            src={angryGhost}
-            alt="angry-ghost"
-          />
+          >
+            <Image
+              src={angryGhost}
+              alt="angry-ghost"
+              width={100}
+              height={100}
+            />
+          </MotionDiv>
         </div>
         <div className="mb-20">
           <Slider />

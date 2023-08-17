@@ -1,4 +1,4 @@
-import MotionDiv from "./motion-div-wrapper"
+import { MotionDiv } from "./motion-div-wrapper"
 import { SliderCard } from "./slider-card"
 
 export function Slider() {
