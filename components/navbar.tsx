@@ -3,6 +3,8 @@ import Image from "next/image"
 import Link from "next/link"
 import logo from "public/logo.jpg"
 
+import { DownloadButton } from "./download-button"
+
 export function Navbar() {
   return (
     <div className="sticky inset-x-0 top-0 z-50 flex items-center justify-between bg-white p-5 px-28">
@@ -16,9 +18,7 @@ export function Navbar() {
         <Link href="/work">Work With us</Link>
       </div>
       <div>
-        <button className="rounded-full bg-black px-4 py-2 text-white">
-          Download App
-        </button>
+        <DownloadButton />
       </div>
     </div>
   )
