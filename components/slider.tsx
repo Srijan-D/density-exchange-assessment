@@ -1,10 +1,9 @@
-import { motion } from "framer-motion"
-
+import MotionDiv from "./motion-div-wrapper"
 import { SliderCard } from "./slider-card"
 
 export function Slider() {
   return (
-    <motion.div
+    <MotionDiv
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
@@ -60,6 +59,6 @@ export function Slider() {
           />
         </div>
       </div>
-    </motion.div>
+    </MotionDiv>
   )
 }

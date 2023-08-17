@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image"
 import angryGhost from "public/ghost-cute.gif"
 

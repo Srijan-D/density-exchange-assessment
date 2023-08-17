@@ -1,16 +1,14 @@
-"use client"
-
 import Image from "next/image"
-import { motion } from "framer-motion"
 import mobile from "public/mobile.png"
 import { AiFillStar } from "react-icons/ai"
 
 import { DownloadButton } from "./download-button"
+import MotionDiv from "./motion-div-wrapper"
 
 export function Main() {
   return (
     <div className="grid h-3/4 grid-cols-2 items-center rounded-3xl bg-[#EFECFF] p-10 align-middle">
-      <motion.div
+      <MotionDiv
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0.25 }}
         transition={{ duration: 1, type: "keyframes" }}
@@ -34,7 +32,7 @@ export function Main() {
             <p className="text-sm text-gray-700">100+ Appstore reviews</p>
           </div>
         </div>
-      </motion.div>
+      </MotionDiv>
       <div className="flex justify-center">
         <Image
           className="w-11/12 rounded-3xl"
