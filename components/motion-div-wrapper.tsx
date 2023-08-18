@@ -1,30 +1,16 @@
 "use client"
 
 import { type ReactNode } from "react"
-import { motion, type AnimationProps } from "framer-motion"
+import { motion, type HTMLMotionProps } from "framer-motion"
 
-type MotionDivProps = {
-  initial?: AnimationProps["initial"]
-  animate?: AnimationProps["animate"]
-  transition?: AnimationProps["transition"]
+type MotionDivProps = HTMLMotionProps<"div"> & {
   className?: string
   children: ReactNode
 }
 
-export function MotionDiv({
-  initial,
-  animate,
-  transition,
-  className,
-  children,
-}: MotionDivProps) {
+export function MotionDiv({ className, children, ...props }: MotionDivProps) {
   return (
-    <motion.div
-      initial={initial}
-      animate={animate}
-      transition={transition}
-      className={className}
-    >
+    <motion.div className={className} {...props}>
       {children}
     </motion.div>
   )
