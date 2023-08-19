@@ -5,6 +5,7 @@ import { Main } from "@/components/main"
 import { Timeline } from "@/components/timeline"
 import { MidSection } from "@/components/midSection"
 import { Signature } from "@/components/signature"
+import { WorkWithUs } from "@/components/workWithUs"
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
       <Timeline />
       <MidSection />
       <Signature />
+      <WorkWithUs />
+
       <Footer />
     </main>
   )

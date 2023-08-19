@@ -22,7 +22,7 @@ export function Signature() {
                 <div className='flex items-center justify-center text-center'>
 
                     <p className='my-2 inline text-sm font-semibold text-[#363636]'>with love, </p>
-                    <Image src={signature} width={150} height={150} className='ml-2 inline' />
+                    <Image src={signature} alt='signature' width={150} height={150} className='ml-2 inline' />
                 </div>
                 <MotionDiv
                     initial={{ scale: 0, opacity: 0 }}
