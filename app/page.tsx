@@ -1,5 +1,6 @@
 import { About } from "@/components/about"
 import { EQ } from "@/components/eq-section"
+import { Footer } from "@/components/footer"
 import { Main } from "@/components/main"
 import { Timeline } from "@/components/timeline"
 
@@ -10,6 +11,7 @@ export default function Home() {
       <EQ />
       <About />
       <Timeline />
+      <Footer />
     </main>
   )
 }
