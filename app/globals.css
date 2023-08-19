@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    @variants responsive {
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+
+            scrollbar-width: none;
+
+        }
+    }
+}
+
+
+::-webkit-scrollbar {
+    border-radius: 20px;
+    width: 12px;
+    transition-duration: 300ms;
+
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #B39FFC;
+    transition-duration: '0.3s';
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8a6bfc;
+}
+
+
+
+.timeline {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.timestamp {
+    margin-bottom: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 4px dashed #ead8b8;
+}
+
+.status {
+    margin-top: 30px;
+    width: 200px;
+    display: flex;
+    align-items: 'center';
+    justify-content: center;
+    position: relative;
+    transition: all 200ms ease-in;
+}
+
+
+#last {
+    border-bottom: none;
+}
+
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+    .timeline {
+        list-style-type: none;
+        display: block;
+    }
+
+    .li {
+        transition: all 200ms ease-in;
+        display: flex;
+        width: inherit;
+    }
+
+    .timestamp {
+        width: 100px;
+        border-bottom: none;
+    }
+}

@@ -1,10 +1,12 @@
 import '../app/globals.css'
 import Image from 'next/image'
 import { MotionDiv } from "./motion-div-wrapper"
+import sun from '../public/sun.png'
+import path from '../public/path.png'
 
 export function SocialCard() {
     return (
-        <section className='mt-28 flex font-[Montserrat] md:mt-40 md:px-4'>
+        <section className='mt-28 flex  md:mt-40 md:px-4'>
             <MotionDiv
                 initial={{ y: 40, opacity: 0 }}
                 transition={{
@@ -41,7 +43,7 @@ export function SocialCard() {
                                 whileInView={{ scale: 1 }}
                                 viewport={{ once: true }}
                                 className="timestamp ">
-                                <Image src='/assets/sun.png' width={50} height={50} className='-mb-6' />
+                                <Image src={sun} alt='sun' width={50} height={50} className='-mb-6' />
 
                             </MotionDiv>
                             <MotionDiv
@@ -69,7 +71,7 @@ export function SocialCard() {
                                 viewport={{ once: true }}
                                 className="timestamp">
 
-                                <Image src='/assets/sun.png' width={50} height={50} className='-mb-6' />
+                                <Image src={sun} alt='sun' width={50} height={50} className='-mb-6' />
                             </MotionDiv>
                             <MotionDiv
                                 initial={{ y: 20, opacity: 0 }}
@@ -96,7 +98,7 @@ export function SocialCard() {
                                 viewport={{ once: true }}
                                 className="timestamp" id="last">
 
-                                <Image src='/assets/sun.png' width={50} height={50} className='-mb-6' />
+                                <Image src={sun} alt='sun' width={50} height={50} className='-mb-6' />
 
                             </MotionDiv>
                             <MotionDiv
@@ -127,7 +129,7 @@ export function SocialCard() {
                     whileInView={{ scale: 1, opacity: 1 }}
                     viewport={{ once: true }}
                     className='mt-4 flex items-center justify-center '>
-                    <Image src='/assets/path_alt.png' width={1000} height={1000} className='scale-75 p-2 md:scale-100 ' />
+                    <Image src={path} alt='path' width={1000} height={1000} className='scale-75 p-2 md:scale-100 ' />
                 </MotionDiv>
             </MotionDiv>
         </section>
