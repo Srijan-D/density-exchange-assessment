@@ -2,7 +2,7 @@ import { MotionDiv } from "./motion-div-wrapper"
 
 export function MidSection() {
     return (
-        <section className='mt-28 flex flex-col gap-8 px-8 text-center font-[Montserrat] md:mt-40 md:flex-row md:gap-6 md:px-40 md:text-start'>
+        <section className='mt-28 flex flex-col gap-8 px-8 text-center  md:mt-40 md:flex-row md:gap-6 md:px-40 md:text-start'>
             <MotionDiv
                 initial={{ y: 20, opacity: 0 }}
                 transition={{

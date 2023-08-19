@@ -11,7 +11,7 @@ export function WorkWithUs() {
     const CardData = cardData
 
     return (
-        <section className="mt-24 flex w-screen  items-center justify-center px-1 font-[Montserrat] md:mt-36 md:h-full md:w-full md:px-40">
+        <section className="mt-24 flex w-screen  items-center justify-center px-1  md:mt-36 md:h-full md:w-full md:px-40">
             <MotionDiv
                 initial={{ y: 40, opacity: 0 }}
                 transition={{

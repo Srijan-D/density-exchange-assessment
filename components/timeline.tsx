@@ -14,7 +14,7 @@ import { MotionHeading } from "./motion-wrapper"
 
 export function Timeline() {
   return (
-    <section className="mt-12 flex w-[80%] flex-col  items-start justify-center font-[Montserrat] md:mt-28 md:px-40">
+    <section className="mt-12 flex w-[80%] flex-col  items-start justify-center  md:mt-28 md:px-40">
       <MotionParagraph
         initial={{ x: "-200", scale: 0, opacity: 0 }}
         transition={{
