@@ -27,8 +27,7 @@ export function Timeline() {
         viewport={{ once: true }}
         className="md:text-md text-sm font-medium text-[#535353] "
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ad
-        facere recusandae.
+        Wrong with self-improvement & how were fixing it.
       </MotionParagraph>
 
       <div className="flex">
@@ -44,7 +43,7 @@ export function Timeline() {
           viewport={{ once: true }}
           className="my-4 inline text-2xl  font-bold text-black md:mb-1 md:text-4xl"
         >
-          Lorem, ipsum dolor.
+          Self Improvement. Ugh.
         </MotionHeading>
 
         <MotionDiv
@@ -81,12 +80,10 @@ export function Timeline() {
             iconClassName="flex justify-center items-center "
           >
             <h3 className="vertical-timeline-element-title text-lg font-semibold text-black ">
-              Lorem ipsum dolor sit amet.
+              It’s not as easy as 1-2-3.
             </h3>
             <h4 className="vertical-timeline-element-subtitle text-sm font-medium text-[#535353]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              tempora iusto modi reprehenderit, nemo fugit. Corrupti iusto omnis
-              placeat qui quibusdam voluptatibus quisquam.
+              The journey of change may be long, but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).
             </h4>
           </VerticalTimelineElement>
 
