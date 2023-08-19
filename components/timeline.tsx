@@ -39,6 +39,7 @@ export function Timeline() {
             type: "spring",
             stiffness: 50,
           }}
+
           whileInView={{ x: 0, scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           className="my-4 inline text-2xl  font-bold text-black md:mb-1 md:text-4xl"
