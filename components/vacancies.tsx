@@ -1,8 +1,5 @@
-"use client"
-
-import { motion } from "framer-motion"
-
 import { MotionDiv } from "./motion-div-wrapper"
+import { MotionHeading } from "./motion-wrapper"
 
 const data = [
   {
@@ -27,7 +24,7 @@ const data = [
 
 export function Vacancies() {
   return (
-    <motion.section
+    <MotionDiv
       initial={{ y: 40, opacity: 0 }}
       transition={{
         delay: 0.3,
@@ -35,10 +32,10 @@ export function Vacancies() {
       }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
-      className="mb-10 mt-40 flex w-[85%] flex-col gap-8 font-[Montserrat] md:px-40"
+      className="mb-10 mt-40 flex w-[85%] flex-col gap-8 md:px-40"
     >
       <div className="flex items-start justify-center md:justify-start">
-        <motion.h1
+        <MotionHeading
           initial={{ x: "-200", scale: 0, opacity: 0 }}
           transition={{
             delay: 0.2,
@@ -51,7 +48,7 @@ export function Vacancies() {
           className="text-center text-2xl font-bold text-black md:ml-2 md:text-start md:text-4xl"
         >
           Open Vacancies
-        </motion.h1>
+        </MotionHeading>
       </div>
       <div className="flex flex-col items-center justify-center gap-4 md:flex-row md:gap-8">
         {data.map((item, id) => (
@@ -64,7 +61,7 @@ export function Vacancies() {
           />
         ))}
       </div>
-    </motion.section>
+    </MotionDiv>
   )
 }
 
