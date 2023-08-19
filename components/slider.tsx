@@ -37,26 +37,7 @@ export function Slider() {
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
             emoji="😳"
           />
-          <SliderCard
-            bgColor="bg-green-100"
-            title="You get a promotion at work"
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            emoji="🙂"
-          />
-          <SliderCard
-            tilted
-            bgColor="bg-rose-400"
-            text="text-white"
-            title="You get a promotion at work"
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            emoji="😟"
-          />
-          <SliderCard
-            bgColor="bg-red-100"
-            title="You get a promotion at work"
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            emoji="😑"
-          />
+
         </div>
       </div>
     </MotionDiv>
