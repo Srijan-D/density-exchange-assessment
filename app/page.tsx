@@ -3,6 +3,7 @@ import { EQ } from "@/components/eq-section"
 import { Footer } from "@/components/footer"
 import { Main } from "@/components/main"
 import { Timeline } from "@/components/timeline"
+import { MidSection } from "@/components/section2"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <EQ />
       <About />
       <Timeline />
+      <MidSection />
       <Footer />
     </main>
   )
