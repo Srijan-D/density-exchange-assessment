@@ -14,7 +14,7 @@ import { MotionHeading } from "./motion-wrapper"
 
 export function Timeline() {
   return (
-    <section className="mt-12 flex w-[80%] flex-col  items-start justify-center font-[Montserrat] md:mt-28 md:px-40">
+    <section className="mt-12 flex w-[80%] flex-col  items-start justify-center md:mt-28 md:px-40">
       <MotionParagraph
         initial={{ x: "-200", scale: 0, opacity: 0 }}
         transition={{
@@ -39,7 +39,6 @@ export function Timeline() {
             type: "spring",
             stiffness: 50,
           }}
-
           whileInView={{ x: 0, scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           className="my-4 inline text-2xl  font-bold text-black md:mb-1 md:text-4xl"
@@ -84,7 +83,9 @@ export function Timeline() {
               It’s not as easy as 1-2-3.
             </h3>
             <h4 className="vertical-timeline-element-subtitle text-sm font-semibold text-[#535353]">
-              The journey of change may be long, but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).
+              The journey of change may be long, but our sessions are quick. We
+              get to the point and tell you what you want to know (and nothing
+              else).
             </h4>
           </VerticalTimelineElement>
 

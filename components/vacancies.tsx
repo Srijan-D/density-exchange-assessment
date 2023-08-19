@@ -22,6 +22,39 @@ const data = [
   },
 ] as const
 
+type TProps = Omit<(typeof data)[number], "id"> & { id?: number }
+
+function VacanciesCard({ title, pos, location, salary }: TProps) {
+  return (
+    <MotionDiv
+      initial={{ scale: 0, opacity: 0 }}
+      transition={{
+        delay: 0.4,
+        duration: 0.5,
+        type: "spring",
+        stiffness: 50,
+      }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: true }}
+      className="flex flex-[0.33] flex-col rounded-xl bg-[#FEFBEC] px-6 py-8"
+    >
+      <h1 className="mb-3 text-lg font-bold text-black">{title}</h1>
+      <ul className="list-disc">
+        <li className="ml-4 text-sm font-semibold text-[#535353]">{pos}</li>
+        <li className="ml-4 text-sm font-semibold text-[#535353]">
+          {location}
+        </li>
+        <li className="ml-4 text-sm font-semibold text-[#535353]">{salary}</li>
+      </ul>
+      <div className="flex items-center justify-start">
+        <button className="mt-6 rounded-[50px] bg-black px-4 py-3 text-sm font-semibold text-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] duration-300 hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+          See Details
+        </button>
+      </div>
+    </MotionDiv>
+  )
+}
+
 export function Vacancies() {
   return (
     <MotionDiv
@@ -60,39 +93,6 @@ export function Vacancies() {
             salary={item.salary}
           />
         ))}
-      </div>
-    </MotionDiv>
-  )
-}
-
-type TProps = Omit<(typeof data)[number], "id"> & { id?: number }
-
-function VacanciesCard({ title, pos, location, salary }: TProps) {
-  return (
-    <MotionDiv
-      initial={{ scale: 0, opacity: 0 }}
-      transition={{
-        delay: 0.4,
-        duration: 0.5,
-        type: "spring",
-        stiffness: 50,
-      }}
-      whileInView={{ scale: 1, opacity: 1 }}
-      viewport={{ once: true }}
-      className="flex flex-[0.33] flex-col rounded-xl bg-[#FEFBEC] px-6 py-8"
-    >
-      <h1 className="mb-3 text-lg font-bold text-black">{title}</h1>
-      <ul className="list-disc">
-        <li className="ml-4 text-sm font-semibold text-[#535353]">{pos}</li>
-        <li className="ml-4 text-sm font-semibold text-[#535353]">
-          {location}
-        </li>
-        <li className="ml-4 text-sm font-semibold text-[#535353]">{salary}</li>
-      </ul>
-      <div className="flex items-center justify-start">
-        <button className="mt-6 rounded-[50px] bg-black px-4 py-3 text-sm font-semibold text-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] duration-300 hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
-          See Details
-        </button>
       </div>
     </MotionDiv>
   )
