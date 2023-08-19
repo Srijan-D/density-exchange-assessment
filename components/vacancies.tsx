@@ -32,7 +32,7 @@ export function Vacancies() {
       }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
-      className="mb-10 mt-40 flex w-[85%] flex-col gap-8 md:px-40"
+      className="mb-10 mt-40 flex w-[99%] flex-col gap-8 md:px-40"
     >
       <div className="flex items-start justify-center md:justify-start">
         <MotionHeading
@@ -43,7 +43,7 @@ export function Vacancies() {
             type: "spring",
             stiffness: 50,
           }}
-          whileInView={{ x: 0, scale: 1, opacity: 1 }}
+          whileInView={{ x: 10, scale: 1, opacity: 1 }}
           viewport={{ once: true }}
           className="text-center text-2xl font-bold text-black md:ml-2 md:text-start md:text-4xl"
         >

@@ -51,7 +51,7 @@ export function SocialCard() {
                                 className="timestamp "
                             >
                                 <Image
-                                    src="/assets/sun.png"
+                                    src={sun}
                                     width={50}
                                     height={50}
                                     className="-mb-6"
@@ -87,7 +87,7 @@ export function SocialCard() {
                                 className="timestamp"
                             >
                                 <Image
-                                    src="/assets/sun.png"
+                                    src={sun}
                                     width={50}
                                     height={50}
                                     className="-mb-6"
@@ -123,7 +123,7 @@ export function SocialCard() {
                                 id="last"
                             >
                                 <Image
-                                    src="/assets/sun.png"
+                                    src={sun}
                                     width={50}
                                     height={50}
                                     className="-mb-6"
@@ -161,7 +161,7 @@ export function SocialCard() {
                     className="mt-4 flex items-center justify-center "
                 >
                     <Image
-                        src="/assets/path_alt.png"
+                        src={path}
                         width={1000}
                         height={1000}
                         className="scale-75 p-2 md:scale-100 "

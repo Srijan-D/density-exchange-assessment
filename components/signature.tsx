@@ -4,7 +4,7 @@ import { MotionDiv } from "./motion-div-wrapper"
 
 export function Signature() {
   return (
-    <section className="mt-40 flex items-center justify-center px-4  md:px-24 ">
+    <section className="mt-40 flex items-center justify-center px-4 font-[Montserrat] md:px-24 ">
       <MotionDiv
         initial={{ y: 80, opacity: 0 }}
         transition={{

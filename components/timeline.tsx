@@ -7,14 +7,14 @@ import {
 
 import "react-vertical-timeline-component/style.min.css"
 
-import boo from "../public/boo.svg"
+import blueAnimation from "../public/blueAnimation.gif"
 import { MotionDiv } from "./motion-div-wrapper"
 import { MotionParagraph } from "./motion-p-wrapper"
 import { MotionHeading } from "./motion-wrapper"
 
 export function Timeline() {
   return (
-    <section className="mt-12 flex w-[80%] flex-col  items-start justify-center  md:mt-28 md:px-40">
+    <section className="mt-12 flex w-[80%] flex-col  items-start justify-center font-[Montserrat] md:mt-28 md:px-40">
       <MotionParagraph
         initial={{ x: "-200", scale: 0, opacity: 0 }}
         transition={{
@@ -25,7 +25,7 @@ export function Timeline() {
         }}
         whileInView={{ x: 0, scale: 1, opacity: 1 }}
         viewport={{ once: true }}
-        className="md:text-md text-sm font-medium text-[#535353] "
+        className="md:text-md text-sm font-bold text-[#535353] "
       >
         Wrong with self-improvement & how were fixing it.
       </MotionParagraph>
@@ -58,7 +58,7 @@ export function Timeline() {
           viewport={{ once: true }}
         >
           <Image
-            src={boo}
+            src={blueAnimation}
             width={80}
             height={80}
             alt="boo"
@@ -83,7 +83,7 @@ export function Timeline() {
             <h3 className="vertical-timeline-element-title text-lg font-semibold text-black ">
               It’s not as easy as 1-2-3.
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-sm font-medium text-[#535353]">
+            <h4 className="vertical-timeline-element-subtitle text-sm font-semibold text-[#535353]">
               The journey of change may be long, but our sessions are quick. We get to the point and tell you what you want to know (and nothing else).
             </h4>
           </VerticalTimelineElement>
@@ -102,7 +102,7 @@ export function Timeline() {
             <h3 className="vertical-timeline-element-title text-lg font-semibold text-black ">
               Old habits are hard to break.
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-sm font-medium text-[#535353]">
+            <h4 className="vertical-timeline-element-subtitle text-sm font-semibold text-[#535353]">
               And bad behaviors die hard. Fortunately, we give you great,
               science-backed techniques to use (instead of shouting at your
               boss).
@@ -123,7 +123,7 @@ export function Timeline() {
             <h3 className="vertical-timeline-element-title text-lg font-semibold text-black ">
               You and your motivation don’t have a long-term relationship.
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-sm font-medium text-[#535353]">
+            <h4 className="vertical-timeline-element-subtitle text-sm font-semibold text-[#535353]">
               Luckily, we can proactively prepare you for the marathon, not just
               the race. Effective, memorable exercises.
             </h4>
@@ -143,7 +143,7 @@ export function Timeline() {
             <h3 className="vertical-timeline-element-title text-lg font-semibold text-black ">
               Books just don’t offer practical solutions.
             </h3>
-            <h4 className="vertical-timeline-element-subtitle text-sm font-medium text-[#535353]">
+            <h4 className="vertical-timeline-element-subtitle text-sm font-semibold text-[#535353]">
               Remember when you learned to ride a bike just by reading? Yeah, we
               don’t either. We help you take concrete small steps towards your
               goals.

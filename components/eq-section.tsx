@@ -12,20 +12,16 @@ export function EQ() {
         <div className=" p-6 text-4xl font-bold">EQ beats IQ</div>
         <div className=" p-6 text-lg font-medium tracking-wide text-gray-500">
           {" "}
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s{" "}
+          People with high emotional intelligence(EQ) live more fulfilled lives. They tend to be happierand have healthier relationships.{" "}
         </div>
         <div className=" p-6 text-lg font-medium tracking-wide text-gray-500">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s,
+          They are more successful in their pursuits and make for inspiring leaders. According to science, they earn $ 29k a year
         </div>
       </div>
       <div>
         <div className="flex">
           <MotionHeading
-            
+
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.5 }}

@@ -26,16 +26,10 @@ export function About() {
           className=" z-10 px-20 text-lg font-medium tracking-wide text-gray-500"
         >
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s,Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry&apos;s standard dummy text ever since the 1500s,
+            A personalized pocket coach that provides bite-sized,science driven tools to boost emotional intelligence
             <br />
             <br />
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s,
+            Think of it as pocket cheerleader towards a better,more fulflling.
           </p>
         </MotionDiv>
       </div>

@@ -14,22 +14,22 @@ export function Slider() {
           <SliderCard
             bgColor="bg-indigo-100"
             title="You get a promotion at work"
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            content="You question yourself and wonder when they will realize you are an unqualified imposter"
             emoji="😃"
           />
           <SliderCard
             bgColor="bg-red-100"
-            title="You argue with a friend"
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            title="You argue with a colleague"
+            content="You get angry and defensive, instead of staying open and working towards common ground"
             emoji="😠"
           />
           <SliderCard
             tilted
             bgColor="bg-purple-500"
             text="text-white"
-            title="You get a promotion at work"
+            title="You attend a class reunion"
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-            emoji="😔"
+            emoji="🤨"
           />
           <SliderCard
             bgColor="bg-orange-200"
