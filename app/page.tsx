@@ -1,6 +1,7 @@
 import { About } from "@/components/about"
 import { EQ } from "@/components/eq-section"
 import { Main } from "@/components/main"
+import { Timeline } from "@/components/timeline"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Main />
       <EQ />
       <About />
+      <Timeline />
     </main>
   )
 }
