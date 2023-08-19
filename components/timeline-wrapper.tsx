@@ -8,7 +8,7 @@ import {
   type VerticalTimelineProps,
 } from "react-vertical-timeline-component"
 
-interface TVerticalTimelineComponentProps extends VerticalTimelineProps {
+type TVerticalTimelineComponentProps = VerticalTimelineProps & {
   children: ReactNode
   className?: string
 }
@@ -25,8 +25,7 @@ export function VerticalTimelineComponent({
   )
 }
 
-interface TVerticalTimelineElementComponentProps
-  extends VerticalTimelineElementProps {
+type TVerticalTimelineElementComponentProps = VerticalTimelineElementProps & {
   children: ReactNode
   className?: string
 }
